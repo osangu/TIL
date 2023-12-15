@@ -6,8 +6,8 @@ create table company(
 ```
 
 ```mysql
-	insert into company
-	values ("a", 10), ("a", 20), ("a", 20), ("b", 10), ("b", 20)
+insert into company
+values ("a", 10), ("a", 20), ("a", 20), ("b", 10), ("b", 20)
 ```
 
 
@@ -25,17 +25,14 @@ select name, sum(score) from company group by name;
 
 ```mysql
 select 
-	distinct name,
-	(
-		select
-			sum(score) 
-		from 
-			company 
-		where 
-			name = cmp.name
-	) as score
- from 
-	 company as cmp
+    distinct name,
+    (
+        select sum(score) 
+        from company 
+        where name = cmp.name
+    ) as score
+from 
+    company as cmp
 ```
 
 **Result**   
