@@ -8,3 +8,8 @@
 - [VARCHAR vs TEXT 깊게 파헤치기](https://medium.com/daangn/varchar-vs-text-230a718a22a1)
 ### Postgres
 - [TEXT in postgres](https://dev-scratch.tistory.com/172#VARCHAR%20%EB%A7%90%EA%B3%A0%20TEXT%EB%A5%BC%20%EC%93%B0%EB%A9%B4%20%EC%95%88%20%EB%90%98%EB%82%98%3F-1)
+
+
+## Cloud
+### Cloudflare
+- [Page rule subdomain redirect not working](https://community.cloudflare.com/t/page-rule-subdomain-redirect-not-working/106755/6)
