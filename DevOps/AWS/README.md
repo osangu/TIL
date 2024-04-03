@@ -2,4 +2,4 @@
 
 
 Application integration
-- [Step Function](./DevOps/AWS/Application%20Integration/Step%20Functions.md)
+- [Step Function](./Application%20Integration/Step%20Functions.md)
