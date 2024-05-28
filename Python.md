@@ -13,7 +13,6 @@
 
 
 
-## CGI
 
 - 인터프리터 언어
 - https://dsaint31.tistory.com/496
@@ -23,10 +22,11 @@
 - 가상 환경과 의존성 관리(virtualenv, pyenv, pipenv, poetry)
 - 동적 언어
 - 동시성
-- CGI
+- GIL
 - 싱글 스레드
 - 비동기 (anyio, asyncio, ..) - 코루틴
 - GC
 
-- ETC
-  > "".join() is faster than str += str 
+### ETC
+- [Best way to implement singleton in Python](https://stackoverflow.com/questions/6760685/what-is-the-best-way-of-implementing-singleton-in-python)
+- [String `concatenation` vs `"".join()`](https://stackoverflow.com/questions/3055477/how-slow-is-pythons-string-concatenation-vs-str-join)
