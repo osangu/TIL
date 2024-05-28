@@ -8,3 +8,25 @@
 
 그래서 어떻게 동작하는지 다시금 되새기고, 코드에 어떤 부분으로 반영할 수 있는지 부터 다시 시작해야겠다. 
 
+---- 
+## Basic
+
+
+
+## CGI
+
+- 인터프리터 언어
+- https://dsaint31.tistory.com/496
+- https://hanana1253.github.io/2021/05/04/20210504_techtalk/
+- https://docs.python.org/3/tutorial/interpreter.html
+
+- 가상 환경과 의존성 관리(virtualenv, pyenv, pipenv, poetry)
+- 동적 언어
+- 동시성
+- CGI
+- 싱글 스레드
+- 비동기 (anyio, asyncio, ..) - 코루틴
+- GC
+
+- ETC
+  > "".join() is faster than str += str 
