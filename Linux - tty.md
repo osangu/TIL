@@ -6,4 +6,4 @@
 [What does "pts/" in the output w mean?](https://askubuntu.com/questions/25470/what-does-pts-in-the-output-of-w-mean)
 [How to enable: Switch back to running GUI from tty in 18.04](https://askubuntu.com/questions/1138357/how-to-enable-switch-back-to-running-gui-from-tty-in-18-04)
 
-![tty_screan_shot.png](.images/tty_screan_shot.png)
+![tty_screan_shot.png](images/tty_screan_shot.png)
