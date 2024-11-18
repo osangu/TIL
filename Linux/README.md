@@ -1,0 +1,10 @@
+- [ ] Role
+  - [ ] User
+  - [ ] Directory
+- [ ] File System
+- [ ] Kernel
+- [ ] ETC
+  - [ ] tty
+  - [ ] 대기 모드 진입 방지
+  - [ ] Wifi Connecting
+  - [ ] 화면 자동 끄기
