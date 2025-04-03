@@ -1,0 +1,1 @@
+https://dev.classmethod.jp/articles/s3-remotely-manage-terraform-tfstate-files-using-dynamodb/
