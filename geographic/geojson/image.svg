@@ -1,0 +1,334 @@
+<svg height="2000" width="900"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xml:space="preserve">
+    
+    <style type="text/css">
+        <![CDATA[
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=block');
+            
+            @keyframes fadeInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            @keyframes gradientShift {
+                0%, 100% { stop-color: #667eea; }
+                50% { stop-color: #764ba2; }
+            }
+            
+            @keyframes glow {
+                0%, 100% { opacity: 0.6; }
+                50% { opacity: 1; }
+            }
+            
+            .background {
+                fill: url(#mainGradient);
+                animation: fadeInUp 0.8s ease-out;
+            }
+            
+            .content-bg {
+                fill: rgba(255, 255, 255, 0.95);
+                filter: url(#shadow);
+                animation: fadeInUp 1s ease-out;
+            }
+            
+            .main-title {
+                fill: url(#titleGradient);
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 48px;
+                font-weight: 700;
+                text-anchor: middle;
+                animation: fadeInUp 1.2s ease-out;
+            }
+            
+            .section-title {
+                fill: #34495e;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 32px;
+                font-weight: 600;
+                animation: fadeInUp 1.4s ease-out;
+            }
+            
+            .body-text {
+                fill: #2c3e50;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.7;
+                animation: fadeInUp 1.6s ease-out;
+            }
+            
+            .highlight-text {
+                fill: #2980b9;
+                font-weight: 600;
+            }
+            
+            .tech-term {
+                fill: #d32f2f;
+                font-weight: 500;
+            }
+            
+            .accent-line {
+                stroke: url(#accentGradient);
+                stroke-width: 4;
+                stroke-linecap: round;
+                animation: fadeInUp 1.8s ease-out;
+            }
+            
+            .dimension-box {
+                fill: url(#dimensionGradient);
+                stroke: #dee2e6;
+                stroke-width: 1;
+                rx: 12;
+                ry: 12;
+                animation: fadeInUp 2s ease-out;
+            }
+            
+            .dimension-badge {
+                fill: url(#badgeGradient);
+                rx: 15;
+                ry: 15;
+            }
+            
+            .badge-text {
+                fill: white;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                text-anchor: middle;
+            }
+            
+            .highlight-box {
+                fill: url(#highlightGradient);
+                stroke: #dee2e6;
+                stroke-width: 1;
+                rx: 12;
+                ry: 12;
+                animation: fadeInUp 2.2s ease-out;
+            }
+            
+            .icon-circle {
+                fill: url(#iconGradient);
+                animation: glow 3s ease-in-out infinite;
+            }
+            
+            .footer-text {
+                fill: #7f8c8d;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 16px;
+                text-anchor: middle;
+                animation: fadeInUp 2.4s ease-out;
+            }
+        ]]>
+    </style>
+    
+    <defs>
+        <!-- 그라데이션 정의 -->
+        <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1">
+                <animate attributeName="stop-opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1">
+                <animate attributeName="stop-opacity" values="1;0.8;1" dur="4s" repeatCount="indefinite"/>
+            </stop>
+        </linearGradient>
+        
+        <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#667eea"/>
+            <stop offset="100%" style="stop-color:#764ba2"/>
+        </linearGradient>
+        
+        <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#667eea"/>
+            <stop offset="100%" style="stop-color:#764ba2"/>
+        </linearGradient>
+        
+        <linearGradient id="dimensionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:0.9"/>
+            <stop offset="100%" style="stop-color:#f3e5f5;stop-opacity:0.9"/>
+        </linearGradient>
+        
+        <linearGradient id="badgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea"/>
+            <stop offset="100%" style="stop-color:#764ba2"/>
+        </linearGradient>
+        
+        <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:0.95"/>
+            <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:0.95"/>
+        </linearGradient>
+        
+        <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1"/>
+            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.3"/>
+        </linearGradient>
+        
+        <!-- 그림자 필터 -->
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="10" stdDeviation="15" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+    
+    <!-- 배경 -->
+    <rect width="900" height="2000" class="background"/>
+    
+    <!-- 메인 컨테이너 -->
+    <rect x="50" y="50" width="800" height="1900" rx="20" ry="20" class="content-bg"/>
+    
+    <!-- 장식 원 -->
+    <circle cx="750" cy="150" r="50" class="icon-circle"/>
+    
+    <!-- 메인 제목 -->
+    <text x="450" y="130" class="main-title">🌍 GeoJSON 형식</text>
+    
+    <!-- 제목 밑줄 -->
+    <line x1="370" y1="150" x2="530" y2="150" class="accent-line"/>
+    
+    <!-- 첫 번째 섹션 -->
+    <g transform="translate(80, 200)">
+        <!-- 섹션 제목 -->
+        <text x="0" y="0" class="section-title">📍 들어가기 전에</text>
+        <line x1="0" y1="10" x2="40" y2="10" class="accent-line"/>
+        
+        <!-- 하이라이트 박스 -->
+        <rect x="0" y="30" width="740" height="120" class="highlight-box"/>
+        
+        <!-- 텍스트 내용 -->
+        <text x="20" y="65" class="body-text">
+            <tspan class="tech-term">GeoJSON</tspan>은 <tspan class="tech-term">JSON</tspan>을 기반으로 하는 지리 공간 데이터 교환 형식이다.
+        </text>
+        <text x="20" y="90" class="body-text">
+            여러 유형의 JSON 객체를 결합하여 <tspan class="highlight-text">지리적 특징</tspan>, <tspan class="highlight-text">속성 및 공간적 범위</tspan>에
+        </text>
+        <text x="20" y="115" class="body-text">
+            대한 데이터를 표현하는 방식을 정의한다. 참고로 GeoJSON은
+        </text>
+        <text x="20" y="140" class="body-text">
+            <tspan class="tech-term">WGS(World Geodetic System) 1984</tspan> 좌표계와 십진수를 사용한다.
+        </text>
+    </g>
+    
+    <!-- 두 번째 섹션 -->
+    <g transform="translate(80, 400)">
+        <text x="0" y="0" class="section-title">📍 개요</text>
+        <line x1="0" y1="10" x2="40" y2="10" class="accent-line"/>
+        
+        <text x="0" y="45" class="body-text">
+            위에서 설명했듯이, GeoJSON은 다양한 지리 정보를 JSON 구조를 이용해 구조화 한 것이다.
+        </text>
+        <text x="0" y="70" class="body-text">
+            GeoJSON은 공간의 위치 <tspan class="highlight-text">(Geometry)</tspan>, 부분적인 지리 공간 <tspan class="highlight-text">(a Feature)</tspan>,
+        </text>
+        <text x="0" y="95" class="body-text">
+            여러 부분적인 지리 공간들을 표현할 수 있다 <tspan class="highlight-text">(a FeatureCollection)</tspan>.
+        </text>
+        
+        <!-- 하이라이트 박스 2 -->
+        <rect x="0" y="120" width="740" height="100" class="highlight-box"/>
+        <text x="20" y="155" class="body-text">
+            💡 GeoJSON은 Point, LineString, Polygon, MultiPoint, MultiLineString,
+        </text>
+        <text x="20" y="180" class="body-text">
+            MultiPolygon, GeometryCollection과 같은 타입들을 지원한다.
+        </text>
+        <text x="20" y="205" class="body-text">
+            Feature는 Geometry 객체와 추가적인 속성들을 포함한다.
+        </text>
+        
+        <text x="0" y="255" class="body-text">
+            해당 형식은 가장 넓은 지리학 정보를 고려하여 만들어졌다. 지리적 공간에 존재하는
+        </text>
+        <text x="0" y="280" class="body-text">
+            모든 것들은 물리적 구조체가 아니더라도 특징(Feature)이 될 수 있다.
+        </text>
+    </g>
+    
+    <!-- 차원별 분류 섹션 -->
+    <g transform="translate(80, 750)">
+        <text x="0" y="0" class="section-title">🌐 GeoJSON 기하학적 타입 분류</text>
+        <line x1="0" y1="10" x2="40" y2="10" class="accent-line"/>
+        
+        <!-- 차원 분류 박스 -->
+        <rect x="0" y="30" width="740" height="200" class="dimension-box"/>
+        
+        <text x="20" y="65" class="body-text">
+            GeoJSON은 기존에 <tspan class="tech-term">SFSQL</tspan>에서 정의된 7개의 지리학 타입들을 통해서 구성됐다:
+        </text>
+        
+        <!-- 0차원 -->
+        <rect x="30" y="85" width="80" height="30" class="dimension-badge"/>
+        <text x="70" y="105" class="badge-text">0차원(점)</text>
+        <text x="130" y="105" class="body-text">Point, MultiPoint</text>
+        
+        <!-- 1차원 -->
+        <rect x="30" y="125" width="80" height="30" class="dimension-badge"/>
+        <text x="70" y="145" class="badge-text">1차원(선)</text>
+        <text x="130" y="145" class="body-text">LineString, MultiLineString</text>
+        
+        <!-- 2차원 -->
+        <rect x="30" y="165" width="80" height="30" class="dimension-badge"/>
+        <text x="70" y="185" class="badge-text">2차원(면)</text>
+        <text x="130" y="185" class="body-text">Polygon, MultiPolygon, GeometryCollection</text>
+        
+        <text x="0" y="270" class="body-text">
+            GeoJSON에서 제공하는 기하학적 객체들은 <tspan class="highlight-text">WKB</tspan>와 <tspan class="highlight-text">WKT</tspan>와 유사하다.
+        </text>
+    </g>
+    
+    <!-- Feature 설명 섹션 -->
+    <g transform="translate(80, 1100)">
+        <rect x="0" y="0" width="740" height="120" class="highlight-box"/>
+        <text x="20" y="35" class="body-text">
+            💡 GeoJSON 또한 <tspan class="highlight-text">Feature</tspan>와 <tspan class="highlight-text">FeatureCollection</tspan>을 구성했고,
+        </text>
+        <text x="20" y="60" class="body-text">
+            GeoJSON에서의 Feature 객체들은 위에서 언급했던 기하학 타입들과
+        </text>
+        <text x="20" y="85" class="body-text">
+            추가적인 것들을 포괄한다. FeatureCollection 객체는 Feature 객체들의 배열을 포함한다.
+        </text>
+        
+        <text x="0" y="165" class="body-text">
+            이 구조는 <tspan class="tech-term">Web Feature Service(WFS)</tspan>이 [WFSv1]에 명시된 GetFeatures 요청 또는,
+        </text>
+        <text x="0" y="190" class="body-text">
+            Placemarks[KMLv.2.2]의 <tspan class="tech-term">Keyhole Markup Language[KML]</tspan> 폴더 구조에
+        </text>
+        <text x="0" y="215" class="body-text">
+            응답하는 것과 유사하다.
+        </text>
+        
+        <text x="0" y="255" class="body-text">
+            그러나 일부 WFS 구현에서는 GetFeature 요청에 대한 응답을 GeoJSON 형식으로
+        </text>
+        <text x="0" y="280" class="body-text">
+            제공하기도 하지만, <tspan class="highlight-text">GeoJSON 자체는 특정한 서비스 모델이나 Feature 타입의</tspan>
+        </text>
+        <text x="0" y="305" class="body-text">
+            <tspan class="highlight-text">개념 체계를 강제하지 않는다</tspan>. 이것이 최초로 공개된 2008년 이래로,
+        </text>
+        <text x="0" y="330" class="body-text">
+            GeoJSON 형식의 사양이 유명해졌다. JavaScript web-mapping 라이브러리들,
+        </text>
+        <text x="0" y="355" class="body-text">
+            JSON 기반의 Document 데이터베이스들과 Web API들에서 널리 사용되기 시작했다.
+        </text>
+    </g>
+    
+    <!-- 푸터 -->
+    <g transform="translate(80, 1600)">
+        <line x1="0" y1="0" x2="740" y2="0" stroke="#ddd" stroke-width="1"/>
+        <text x="370" y="40" class="footer-text">📚 참고</text>
+        <text x="370" y="70" class="footer-text">• 해당 번역본은 학습을 위한 개인적인 번역입니다.</text>
+        <text x="370" y="100" class="footer-text">• 해당 문서의 모든 저작권은 IETF에게 있습니다.</text>
+    </g>
+    
+</svg>
