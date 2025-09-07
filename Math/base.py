@@ -8,7 +8,6 @@ basic_operation = {
 }
 
 
-
 class Formula:
 
     def __init__(self, args: List['Var']):
@@ -78,22 +77,6 @@ class Var:
     def __pow__(self, other):  # **
         ...
     '''
-
-
-def pythagorean_theorem(a_v, b_v, c_v):
-    a = Var(name='a', exponent=2)
-    b = Var(name='b', exponent=2)
-    c = Var(name='c', exponent=2)
-
-    print(
-        f'{str(c)} = {str(a)} + {str(b)}'
-    )
-    print(
-        f'{c.value(c_v)} = {a.value(a_v)} + {b.value(b_v)}'
-    )
-
-if __name__ == '__main__':
-    pythagorean_theorem(5, 12, 13)
 
     '''    
     class Args:
